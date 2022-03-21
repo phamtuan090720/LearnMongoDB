@@ -1,0 +1,29 @@
+{
+  "name": "learnmongodb",
+  "version": "1.0.0",
+  "description": "MongoDB là một cơ sở dữ liệu mã nguồn mở và là cơ sở dữ liệu NoSQL hàng đầu, được hàng triệu người sử dụng. MongoDB được viết bằng C++.\r Ngoài ra, MongoDB là một cơ sở dữ liệu đa nền tảng, hoạt động trên các khái niệm Collection và Document, nó cung cấp hiệu suất cao, tính khả dụng cao và khả năng mở rộng dễ dàng.\r ### Vậy Conllection là gì ? \r Collection là một nhóm các Document trong MongoDB. Nó tương đương như một bảng trong RDBMS. Do đó, một Collection tồn tại bên trong một cơ sở dữ liệu duy nhất. Các Collection không có ràng buộc Relationship như các hệ quản trị cơ sở dữ liệu khác nên việc truy xuất rất nhanh, chính vì thế mỗi collection có thể chứa nhiều thể loại khác nhau không giống như table trong hệ quản trị mysql là các field cố định. Các Document bên trong một Collection có thể có nhiều trường khác nhau. Đặc biệt, tất cả các Document trong một Collection là tương tự nhau hoặc với cùng mục đích liên quan.\r ### Document trong Mongodb là gì ? \r Một Document trong MongoDB, có cấu trúc tương tự như kiểu dữ liệu JSON, là một tập hợp các cặp key-value. Các Document có schema động, nghĩa là Document trong cùng một Collection không cần thiết phải có cùng một tập hợp các trường hoặc cấu trúc giống nhau, và các trường chung trong Document của một Collection có thể giữ các kiểu dữ liệu khác nhau.\r #### Bảng so sánh giữa Relational Database Management System vs NoSQL :\r | Relational Database Management System|MongoDB (NoSQL)  |\r |:--------------:|:--------------:|\r | Database | Database |\r | Table| Collection|\r | Tuple/Row| Document|\r | column| Field|\r | Table Join| Embedded Documents|\r |Primary Key|Primary Key (Giá trị mặc định là _id được cung cấp bởi chính MongoDB)|\r | **Database Server và Client** |  |\r |  Mysqld/Oracle| mongod |\r |  mysql/sqlplus| mongo|",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phamtuan090720/LearnMongoDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phamtuan090720/LearnMongoDB/issues"
+  },
+  "homepage": "https://github.com/phamtuan090720/LearnMongoDB#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.7"
+  }
+}
